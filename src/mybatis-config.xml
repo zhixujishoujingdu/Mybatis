@@ -39,6 +39,8 @@
     <mappers>
         <mapper resource="com/zqx/mapper/IdCardMapper.xml"/>
         <mapper resource="com/zqx/mapper/PersonMapper.xml"/>
+        <mapper resource="com/zqx/mapper/UserMapper.xml"/>
+
     </mappers>
 
 </configuration>

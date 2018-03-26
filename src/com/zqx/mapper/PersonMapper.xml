@@ -24,7 +24,7 @@
     </resultMap>
 
 
-    <!--嵌套结果-->
+    <!--嵌套结果:只执行一条SQL语句，提高运行效率-->
     <select id="findPersonById2" parameterType="Integer" resultMap="IdCardWithPersonResult2">
         select p.*,idcard.code
         from tb_person p,tb_idcard idcard
