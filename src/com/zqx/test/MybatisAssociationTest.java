@@ -29,7 +29,7 @@ public class MybatisAssociationTest {
     public void findUserTest(){
         SqlSession sqlSession = MybatisUtil.getSession();
         User user =sqlSession.selectOne(
-                "com.zqx.mapper"+".UserMapper.findUserByOrders",1);
+                "com.zqx.mapper"+".UserMapper.findUserWithOrders",1);
         System.out.println(user);
         sqlSession.close();
     }
